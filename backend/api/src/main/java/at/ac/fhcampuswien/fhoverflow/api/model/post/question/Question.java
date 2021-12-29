@@ -1,5 +1,7 @@
-package at.ac.fhcampuswien.fhoverflow.api.model.post;
+package at.ac.fhcampuswien.fhoverflow.api.model.post.question;
 
+import at.ac.fhcampuswien.fhoverflow.api.model.post.Post;
+import at.ac.fhcampuswien.fhoverflow.api.model.post.answer.Answer;
 import lombok.Getter;
 import lombok.Setter;
 
