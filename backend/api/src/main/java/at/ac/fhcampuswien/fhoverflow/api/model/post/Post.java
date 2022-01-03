@@ -1,17 +1,22 @@
 package at.ac.fhcampuswien.fhoverflow.api.model.post;
 
-import at.ac.fhcampuswien.fhoverflow.api.model.LikeDislike;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Getter
 @Setter
+@Entity
 public abstract class Post {
+    @Id
+    @GeneratedValue
     protected Long id;
+    protected EPostType type;
     protected Long ownerId;
     protected String content;
     protected String title;
-    protected List<LikeDislike> likesDislikes;
+    //protected List<LikeDislike> likesDislikes;
 }
